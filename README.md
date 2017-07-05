@@ -64,6 +64,11 @@ python wide_n_deep_tutorial.py --model_type=deep
 ```
 
 ### Distributed Training on ML Engine
+Sample code: https://github.com/GoogleCloudPlatform/cloudml-samples/archive/master.zip
+```
+cd Downloads/cloudml-samples-master/census/estimator
+ls trainer
+```
 Hyperparameter Tuning: https://cloud.google.com/ml-engine/docs/concepts/hyperparameter-tuning-overview  
 
 ```
