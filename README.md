@@ -6,6 +6,11 @@ TensorFlow website: https://www.tensorflow.org
 High-level API (tf.contrib.learn) tutorial: https://www.tensorflow.org/get_started/tflearn  
 TensorFlow installation: https://www.tensorflow.org/install  
 
+```
+sudo pip install tensorflow
+sudo pip install numpy
+```
+
 Add to iris.py:  
 ```
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
