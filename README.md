@@ -7,8 +7,7 @@ High-level API (tf.contrib.learn) tutorial: https://www.tensorflow.org/get_start
 TensorFlow installation: https://www.tensorflow.org/install  
 
 ```
-sudo pip install tensorflow
-sudo pip install numpy
+sudo -H pip install tensorflow
 ```
 
 Add to iris.py:  
