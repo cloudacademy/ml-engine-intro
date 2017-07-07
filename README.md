@@ -28,7 +28,7 @@ Google Cloud SDK installation: https://cloud.google.com/sdk
 ```
 mkdir trainer  
 mv iris.py trainer  
-touch train/__init__.py  
+touch trainer/__init__.py  
 gcloud ml-engine local train --module-name trainer.iris --package-path trainer  
 ```
 
