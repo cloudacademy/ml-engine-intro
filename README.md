@@ -82,17 +82,17 @@ EVAL_DATA=$BUCKET/data/adult.test.csv
 JOB=census1  
 ```
 ```
-gcloud ml-engine jobs submit training $JOB \  
-    --job-dir $BUCKET/$JOB \  
-    --runtime-version 1.2 \  
-    --module-name trainer.task \  
-    --package-path trainer/ \  
-    --region $REGION \  
-    --scale-tier STANDARD_1 \  
-    -- \  
-    --train-files $TRAIN_DATA \  
-    --eval-files $EVAL_DATA \  
-    --train-steps 1000  
+gcloud ml-engine jobs submit training $JOB \
+    --job-dir $BUCKET/$JOB \
+    --runtime-version 1.2 \
+    --module-name trainer.task \
+    --package-path trainer \
+    --region $REGION \
+    --scale-tier STANDARD_1 \
+    -- \
+    --train-files $TRAIN_DATA \
+    --eval-files $EVAL_DATA \
+    --train-steps 1000
 ```
 
 ### Deploying a Model on ML Engine
@@ -102,17 +102,17 @@ gsutil ls -r $BUCKET/census1/export
 ```
 ```
 # Note: Replace [Path-to-model] below with your Cloud Storage path
-gcloud ml-engine versions create v1 \  
-    --model census \  
-    --origin gs://[Path-to-model] \    
-    --runtime-version 1.2  
+gcloud ml-engine versions create v1 \
+    --model census \
+    --origin gs://[Path-to-model] \
+    --runtime-version 1.2
 ```
 ```
-gcloud ml-engine predict \  
-    --model census \  
-    --version v1 \  
-    --json-instances \  
-    ../test.json  
+gcloud ml-engine predict \
+    --model census \
+    --version v1 \
+    --json-instances \
+    ../test.json
 ```
 
 ### Conclusion
