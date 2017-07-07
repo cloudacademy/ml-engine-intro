@@ -92,7 +92,7 @@ gcloud ml-engine jobs submit training $JOB \
     -- \  
     --train-files $TRAIN_DATA \  
     --eval-files $EVAL_DATA \  
-    --train-steps 1000 \  
+    --train-steps 1000  
 ```
 
 ### Deploying a Model on ML Engine
