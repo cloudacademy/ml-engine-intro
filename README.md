@@ -40,7 +40,7 @@ REGION=[Region]  # Replace [Region] with a Google Cloud Platform region, such as
 gcloud ml-engine jobs submit training job1 \
     --module-name trainer.iris \
     --package-path trainer \
-    --staging-bucket $BUCKET \ 
+    --staging-bucket $BUCKET \
     --region $REGION
 ```
 
