@@ -55,7 +55,7 @@ tf.logging.set_verbosity(tf.logging.ERROR)
 ```
 
 ```
-sudo pip install pandas  
+sudo -H pip install pandas  
 ```
 
 ```
