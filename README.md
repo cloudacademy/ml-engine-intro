@@ -104,7 +104,7 @@ gsutil ls -r $BUCKET/census1/export
 # Note: Replace [Path-to-model] below with your Cloud Storage path
 gcloud ml-engine versions create v1 \
     --model census \
-    --origin gs://[Path-to-model] \
+    --origin [Path-to-model] \
 ```
 ```
     --runtime-version 1.2
