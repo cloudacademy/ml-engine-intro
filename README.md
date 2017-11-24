@@ -47,13 +47,6 @@ gcloud ml-engine jobs submit training job1 \
 ### Feature Engineering
 TensorFlow Linear Model Tutorial: https://www.tensorflow.org/tutorials/wide  
 
-Add to wide_n_deep_tutorial.py:  
-```
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-tf.logging.set_verbosity(tf.logging.ERROR)
-```
-
 ```
 sudo -H pip install pandas  
 ```
