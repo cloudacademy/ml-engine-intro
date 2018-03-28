@@ -112,4 +112,3 @@ gcloud ml-engine predict \
 
 ### Conclusion
 Cloud Machine Learning Engine documentation: https://cloud.google.com/ml-engine/docs  
-Cloud Academy community forums: http://cloudacademy.com/community  
