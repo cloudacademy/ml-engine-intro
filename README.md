@@ -1,5 +1,4 @@
-# Introduction to Google Cloud Machine Learning Engine
-This file contains text you can copy and paste for the examples in Cloud Academy's _Introduction to Google Cloud Machine Learning Engine_ course.  
+## This repository is outdated and has been replaced by https://github.com/cloudacademy/mlengine-intro.
 
 ### TensorFlow
 TensorFlow website: https://www.tensorflow.org  
